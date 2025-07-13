@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucero – Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primario: '#7e9f3d',
+            claro: '#f9fbe7',
+          },
+          fontFamily: {
+            sans: ['Arial', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-claro text-gray-800 font-sans scroll-smooth">
+
+  <!-- NAV -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold text-primario">Lucero</h1>
+      <ul class="flex gap-5 text-sm">
+        <li><a href="#inicio" class="hover:text-primario">Inicio</a></li>
+        <li><a href="#sobremi" class="hover:text-primario">Sobre mí</a></li>
+        <li><a href="#proyectos" class="hover:text-primario">Proyectos</a></li>
+        <li><a href="#contacto" class="hover:text-primario">Contáctame</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- INICIO -->
+  <section id="inicio" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h2 class="text-4xl font-semibold mb-2">Hola, soy <span class="text-primario">Lucero</span></h2>
+    <p class="text-gray-600 text-lg">Bienvenida a mi espacio personal en la web</p>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section id="sobremi" class="py-20 bg-white px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-primario mb-4">Sobre Mí</h2>
+      <p class="text-gray-700">Soy una diseñadora creativa apasionada por la tecnología, el arte digital y el desarrollo web. Me encanta crear experiencias simples pero impactantes, y disfruto fusionar estética con funcionalidad.</p>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="py-20 px-6 bg-claro">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold text-primario text-center mb-10">Mis Proyectos</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Proyecto -->
+        <div class="bg-white shadow rounded p-5">
+          <h3 class="font-semibold text-lg mb-2">Proyecto 1</h3>
+          <p class="text-sm text-gray-600 mb-3">Descripción breve del proyecto. Puedes enlazar al demo o código.</p>
+          <div class="flex justify-between">
+            <a href="#" class="text-primario text-sm">Código</a>
+            <a href="#" class="bg-primario text-white px-3 py-1 rounded text-sm">Ver demo</a>
+          </div>
+        </div>
+        <!-- Puedes duplicar este bloque para más proyectos -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-20 px-6 bg-white">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-primario mb-4">Contáctame</h2>
+      <p class="text-gray-600 mb-6">¿Tienes una propuesta o solo quieres saludar? ¡Estoy disponible!</p>
+      <a href="mailto:lucero@email.com" class="inline-block bg-primario text-white px-6 py-2 rounded hover:bg-green-700 transition">Escríbeme</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 text-center text-sm text-gray-500">
+    © 2025 Lucero. Diseñado con cariño y creatividad 🌱
+  </footer>
+
+</body>
+</html>
