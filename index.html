@@ -2,11 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lucero – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucero - Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/heroicons@2.0.16/20/solid/index.js" type="module"></script>
-
   <script>
     tailwind.config = {
       theme: {
@@ -23,16 +21,15 @@
     }
   </script>
 </head>
-<body class="bg-claro text-gray-800 font-sans scroll-smooth">
+<body class="bg-claro font-sans text-gray-800 scroll-smooth">
 
-  <!-- NAV -->
-  <header class="sticky top-0 backdrop-blur bg-white/30 border-b border-white/20 shadow z-50">
-
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
-      <h1 class="text-xl font-bold text-primario">Lucero</h1>
-      <ul class="flex gap-5 text-sm">
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-primario">Portfolio</h1>
+      <ul class="flex gap-4 text-sm font-medium">
         <li><a href="#inicio" class="hover:text-primario">Inicio</a></li>
-        <li><a href="#sobremi" class="hover:text-primario">Sobre mí</a></li>
+        <li><a href="#sobremi" class="hover:text-primario">Sobre Mí</a></li>
         <li><a href="#proyectos" class="hover:text-primario">Proyectos</a></li>
         <li><a href="#contacto" class="hover:text-primario">Contáctame</a></li>
       </ul>
@@ -40,50 +37,65 @@
   </header>
 
   <!-- INICIO -->
-  <section id="inicio" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-    <h2 class="text-4xl font-semibold mb-2">Hola, soy <span class="text-primario">Lucero</span></h2>
-    <p class="text-gray-600 text-lg">Bienvenida a mi espacio personal en la web</p>
+  <section id="inicio" class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <h2 class="text-4xl font-semibold mb-2">Hola, soy <span class="text-primario">Lucero</span>...</h2>
+    <p class="text-lg text-gray-600">Te doy la bienvenida</p>
+    <div class="w-24 h-24 rounded-full border-4 border-primario mt-6"></div>
   </section>
 
   <!-- SOBRE MÍ -->
-  <section id="sobremi" class="py-20 bg-white px-6">
+  <section id="sobremi" class="bg-white py-16 px-4">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-2xl font-bold text-primario mb-4">Sobre Mí</h2>
-      <p class="text-gray-700">Soy una diseñadora creativa apasionada por la tecnología, el arte digital y el desarrollo web. Me encanta crear experiencias simples pero impactantes, y disfruto fusionar estética con funcionalidad.</p>
+      <h2 class="text-2xl font-bold text-primario mb-6">Sobre Mí</h2>
+      <p class="text-gray-700 mb-4">
+        ¡Hola! Soy Lucero, una apasionada diseñadora creativa con un amor especial por el pixel art y las nuevas tecnologías...
+      </p>
+      <h3 class="mt-6 font-semibold text-gray-800">Mis Intereses en Pixeles</h3>
+      <div class="flex flex-wrap justify-center gap-3 mt-4">
+        <span class="px-4 py-2 bg-primario text-white rounded-full text-sm">Diseño</span>
+        <span class="px-4 py-2 bg-primario text-white rounded-full text-sm">IA</span>
+        <span class="px-4 py-2 bg-primario text-white rounded-full text-sm">Tecnología</span>
+      </div>
     </div>
   </section>
 
   <!-- PROYECTOS -->
-  <section id="proyectos" class="py-20 px-6 bg-claro">
+  <section id="proyectos" class="py-16 bg-claro px-4">
     <div class="max-w-5xl mx-auto">
-      <h2 class="text-2xl font-bold text-primario text-center mb-10">Mis Proyectos</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Proyecto -->
-        <div class="bg-white shadow rounded p-5">
-          <h3 class="font-semibold text-lg mb-2">Proyecto 1</h3>
-          <p class="text-sm text-gray-600 mb-3">Descripción breve del proyecto. Puedes enlazar al demo o código.</p>
+      <h2 class="text-2xl font-bold text-center text-primario mb-12">Mis Proyectos</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- Proyecto 1 -->
+        <div class="bg-white rounded-xl shadow-md p-5">
+          <h3 class="font-semibold text-lg mb-2">Pixel Adventure Game</h3>
+          <div class="flex gap-2 flex-wrap text-xs mb-3">
+            <span class="bg-gray-200 px-2 py-1 rounded">Pixel Art</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Juego</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">TypeScript</span>
+          </div>
+          <p class="text-sm mb-3">Un encantador juego 2D con estética pixelada...</p>
           <div class="flex justify-between">
-            <a href="#" class="text-primario text-sm">Código</a>
-            <a href="#" class="bg-primario text-white px-3 py-1 rounded text-sm">Ver demo</a>
+            <a href="#" class="text-primario font-medium text-sm">Código</a>
+            <a href="#" class="bg-primario text-white px-3 py-1 rounded text-sm">Ver Demo</a>
           </div>
         </div>
-        <!-- Puedes duplicar este bloque para más proyectos -->
+        <!-- Puedes clonar más proyectos aquí -->
       </div>
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="py-20 px-6 bg-white">
-    <div class="max-w-xl mx-auto text-center">
+  <section id="contacto" class="bg-white py-16 px-4">
+    <div class="max-w-2xl mx-auto text-center">
       <h2 class="text-2xl font-bold text-primario mb-4">Contáctame</h2>
-      <p class="text-gray-600 mb-6">¿Tienes una propuesta o solo quieres saludar? ¡Estoy disponible!</p>
+      <p class="mb-4 text-gray-600">¿Tienes una idea, propuesta o colaboración? ¡Hablemos!</p>
       <a href="mailto:lucero@email.com" class="inline-block bg-primario text-white px-6 py-2 rounded hover:bg-green-700 transition">Escríbeme</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-6 text-center text-sm text-gray-500">
-    © 2025 Lucero. Diseñado con cariño y creatividad 🌱
+  <footer class="text-center py-6 text-sm text-gray-500">
+    © 2025 Lucero. Todos los derechos reservados.<br />
+    Diseñado con ❤️ y un toque de pixel art.
   </footer>
 
 </body>
