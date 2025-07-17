@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "lu-indev-portfolio"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
